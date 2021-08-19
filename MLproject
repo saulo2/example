@@ -1,0 +1,13 @@
+name: example
+
+conda_env: conda.yml
+
+entry_points:
+  main:
+    parameters:
+      alpha: float
+      l1_ratio: {type: float, default: 0.1}
+    command: "python train.py --alpha {alpha} --l1-ratio {l1_ratio}"
+
+placida_env:
+  image: host.docker.internal:5001/pam-example-base:0.0.1-SNAPSHOT@sha256:1f816a954e2c997e1ba836555f48ec7408c8fd13273f854950906260fd5c1e6d
