@@ -10,4 +10,4 @@ entry_points:
     command: "python train.py --alpha {alpha} --l1-ratio {l1_ratio}"
 
 placida_env:
-  image: host.docker.internal:5000/pam-example-base:0.0.1-SNAPSHOT@sha256:f1e8701c1dbdbffca63a7bd27b0bab0ba53caf8d837cd608317714f942aadad7
+  image: localhost:5000/pam-example-base:0.0.1-SNAPSHOT@sha256:f04361d1602e54efbfac1624536c7f618aa6d89eb12501df7f488aaabbb40487
